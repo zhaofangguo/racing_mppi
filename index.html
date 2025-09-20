@@ -147,7 +147,7 @@
         <source src="static/videos/MPPI_sample.mp4" type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Fly only use waypints: A reference-free framework for agile drone racing via Model Predictive Path Integral (MPPI) control, capable of optimizing discontinuous, non-differentiable objectives in real-time.
+        Fly only with waypints: A reference-free framework for agile drone racing via Model Predictive Path Integral (MPPI) control, capable of optimizing discontinuous, non-differentiable objectives in real-time.
       </h2>
     </div>
   </div>
@@ -175,22 +175,29 @@
           A conceptual illustration of the unified MPPI framework. (a) The core sampling and weighting stage of MPPI. (b) A comparison of the proposed reference-free gate progress objective with two conventional reference-based objectives: Trajectory Tracking and Contouring Control.
         </h2>
       </div>
+      <div class="container">
+        <!-- <h2 class="title is-3 has-text-centered">Framework Overview</h2> -->
+        <img src="static/images/gate_switch_with_sample.png" alt="A conceptual illustration of the MPPI framework comparing reference-free gate progress with reference-based objectives like Trajectory Tracking and Contouring Control." style="width: 100%; border-radius: 10px;"/>
+        <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+          The left panel shows states within the predictive horizon being assigned different target gate indices (using different color) to achieve rapid progress along the track. To ensure the stable switching, we propose the temporally consistent strategy shown on the right, where an index switch only occurs for states that pass through the gate between two consecutive control loops. This logic, combined with the gate progress objective enables reference-free racing.
+        </h2>
+      </div>
     </div>
 </section>
-<!-- <section class="hero is-small is-light">
+<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <div class="publication-video">
-            <iframe src="https://www.youtube.com" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://youtu.be/6dNSZ2FRhfA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section> -->
+</section>
 <section class="section" id="results">
   <div class="container is-max-desktop">
     <h2 class="title is-3">Results</h2>
